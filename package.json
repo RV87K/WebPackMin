@@ -4,15 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --progress --colors",
+    "build-dev": "webpack",
+    "start": "webpack-dev-server --progress --colors"
   },
   "keywords": [
-    "js"
+    "js",
+    "webpack"
   ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.0"
+  },
+  "dependencies": {
+    "cli": "^1.0.1"
   }
 }
